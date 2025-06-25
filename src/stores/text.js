@@ -4,7 +4,7 @@ import questions from './questions'
 export const texting = defineStore('text', {
   state: () => ({
     questions: JSON.parse(JSON.stringify(questions)),
-    isSubmited: false,
+    isSubmitted: false,
   }),
 
   actions: {
@@ -20,7 +20,7 @@ export const texting = defineStore('text', {
       } else {
         selected.push(oIndex)
       }
-    },
+    },  
 
     // 提交的功能，将选好的选项的内容进行提交，锁定选项
     submitQuiz() {
